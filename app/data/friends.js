@@ -1,6 +1,6 @@
 var friends =   {
         "name":"Ahmed",
-        "gender": "Male",
+        "age": 25,
         "scores":[
             5,
             1,
