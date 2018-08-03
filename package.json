@@ -1,0 +1,25 @@
+{
+  "name": "friendfinder_expressjs",
+  "version": "1.0.0",
+  "description": "express.js assignment - U of R Coding Bootcamp, August 2018",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patlehmann1/friendfinder_expressjs.git"
+  },
+  "author": "Patrick Lehmann",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/patlehmann1/friendfinder_expressjs/issues"
+  },
+  "homepage": "https://github.com/patlehmann1/friendfinder_expressjs#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "path": "^0.12.7"
+  }
+}
