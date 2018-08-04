@@ -1,10 +1,10 @@
 body {
-    background-image: url("../images/12-green-seamless-grass-texture.jpg");
-    background-repeat: repeat;
+    background-image: url("../images/12-green-seamless-grass-texture.jpg") !important;
+    background-repeat: repeat !important;
 }
 
 footer {
-    background-color: whitesmoke;
+    background-color: whitesmoke !important;
 }
 
 #survey-container {
