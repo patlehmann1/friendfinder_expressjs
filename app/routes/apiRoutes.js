@@ -17,16 +17,14 @@ module.exports = function(app) {
         var bestMatch = {
 			name: "",
 			age: "",
-			friendDifference: 1000
+			friendDifference: Infinity
 		};
 
 		// Here we take the result of the user's survey POST and parse it.
 		var userData 	= req.body;
-		var userName 	= userData.name;
-		var userAge	= userData.age;
 		var userScores 	= userData.scores;
 
-		var totalDifference = 0;
+		var totalDifference;
 
 		// Loop through all the friend possibilities in the database. 
 		for  (var i=0; i< friends.length; i++) {
@@ -35,8 +33,7 @@ module.exports = function(app) {
 			totalDifference = 0;
 
 			// Loop through all the scores of each friend
-			for (var j=0; j< friends[i].scores[j]; j++){
-
+			for (var j=0; j< friends[i].scores.length; j++){
 				// We calculate the difference between the scores and sum them into the totalDifference
 				totalDifference += Math.abs(parseInt(userScores[j]) - parseInt(friends[i].scores[j]));
 
@@ -45,8 +42,9 @@ module.exports = function(app) {
 
 					// Reset the bestMatch to be the new friend. 
 					bestMatch.name = friends[i].name;
-					bestMatch.photo = friends[i].age;
+					bestMatch.age = friends[i].age;
 					bestMatch.friendDifference = totalDifference;
+					console.log(bestMatch.name);
 				}
 			}
 		}
