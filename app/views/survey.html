@@ -11,7 +11,20 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <style>
+        body {
+            background-image: url("../public/images/12-green-seamless-grass-texture.jpg") !important;
+            background-repeat: repeat !important;
+        }
+
+        footer {
+            background-color: whitesmoke !important;
+        }
+
+        #survey-container {
+            background-color: whitesmoke !important;
+        }
+    </style>
 </head>
 
 <body>
@@ -70,7 +83,7 @@
         <h3>
             <strong>Question 4</strong>
         </h3>
-        <h4>I'd rather play 9 holes on a tight schedule than not at all.</h4>
+        <h4>You would rather play 9 holes on a tight schedule than not at all.</h4>
         <select class="chosen-select" id="q4">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -83,7 +96,7 @@
         <h3>
             <strong>Question 5</strong>
         </h3>
-        <h4>My significant other lets me play golf whenever I want.</h4>
+        <h4>Your significant other lets you play golf whenever I want.</h4>
         <select class="chosen-select" id="q5">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -96,7 +109,7 @@
         <h3>
             <strong>Question 6</strong>
         </h3>
-        <h4>I cheat once in a while if its just a round for fun. Whats the problem with using a foot wedge sometimes?</h4>
+        <h4>You cheat once in a while if its just a round for fun. Whats the problem with using a foot wedge sometimes?</h4>
         <select class="chosen-select" id="q6">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -169,7 +182,7 @@
         <footer class="footer">
             <div class="container">
                 <p>
-                    <a href="/api/friends">API Friends List</a> |
+                    <a href="/api/friends">Check out the API</a> |
                     <a href="https://github.com/afhaque/friendfinder">GitHub Repo</a>
                 </p>
             </div>
@@ -199,7 +212,7 @@
     </div>
 
     <script type="text/javascript">
-        
+
         var config = {
             '.chosen-select': {},
             '.chosen-select-deselect': {
@@ -221,7 +234,7 @@
 
 
         $("#submit").on("click", function () {
-            
+
             function validateForm() {
                 var isValid = true;
                 $('.form-control').each(function () {
@@ -257,13 +270,6 @@
             return false;
         });
     </script>
-</body>
-
-</html>
-
-
-</script>
-
 </body>
 
 </html>
