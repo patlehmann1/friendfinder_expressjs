@@ -4,7 +4,6 @@
   "description": "express.js assignment - U of R Coding Bootcamp, August 2018",
   "main": "server.js",
   "scripts": {
-    "postinstall": "bower install && grunt build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
